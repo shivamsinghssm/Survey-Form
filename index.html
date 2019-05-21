@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+	</script>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<div class="container">
+		<p id="description">-Let us know how we can improve your freeCodeCamp!</p>
+		<form id="survey-form" name="survey-form">
+			<div id="name-field">
+				<label for="name" id="name-label">* Name:</label> <input id="name" name="name" placeholder=
+				"Enter your name" required="" type="text">
+			</div><br>
+			<div id="email-field">
+				<label for="email" id="email-label">* Email:</label> <input id="email" name=
+				"email" placeholder="Enter your Email" required="" type="email">
+			</div><br>
+			<div id="age">
+				<label for="age" id="number-label">* Age:</label> <input id="number" max="125" min="18" name=
+				"age" placeholder="Age" required="" type="number">
+			</div><br>
+			<div id="radio-buttons">
+				<label for="radiolist" id="radiolist-label">* Gender:</label>
+				<div id="radiolist" style="text-align: left; padding: 4px 0px 0px 0px;">
+					<p><label for="Female"><input id="Female" name="radio-buttons" type="radio" value=
+					"Female">Female</label></p>
+					<p><label for="Male"><input id="Male" name="radio-buttons" type="radio" value=
+					"Male">Male</label></p>
+					<p><label for="Prefer not to say"><input id="Prefer not to say" name="radio-buttons" type=
+					"radio" value="Prefer not to say">Prefer not to say</label></p>
+				</div>
+			</div>
+			<div id="dropdown">
+				<label for="role" id="role-label">Which best describes your current role?</label> <select id=
+				"role">
+					<option disabled selected>
+						Select an option
+					</option>
+					<option>
+						Student
+					</option>
+					<option>
+						Full Time Job
+					</option>
+					<option>
+						Full Time Learner
+					</option>
+					<option>
+						Prefer Not To Say
+					</option>
+					<option>
+						Other
+					</option>
+				</select>
+			</div><br>
+			<div id="textarea" style="margin-bottom: 32px">
+				<label for="textarea" id="textarea-label">If you choose Other, please specify:</label> 
+				<textarea cols="50" name="textarea" placeholder="Enter your comment here..." rows=
+				"4"></textarea>
+			</div>
+			<div id="dropdown">
+				<label for="role" id="role-label">What do you like most your FCC?:</label> <select id=
+				"role">
+					<option disabled selected>
+						Select an option
+					</option>
+					<option>
+						Challenges
+					</option>
+					<option>
+						Projects
+					</option>
+					<option>
+						Community
+					</option>
+					<option>
+						Open Source
+					</option>
+					<option>
+						Other
+					</option>
+				</select>
+			</div>
+			<div id="textarea" style="margin-bottom: 32px">
+				<label for="textarea" id="textarea-label">If you choose Other, please specify:</label> 
+				<textarea cols="50" name="textarea" placeholder="Enter your comment here..." rows=
+				"4"></textarea>
+			</div>
+			<div id="checkboxes">
+				<label for="checklist" id="checklist-label">Things that should be improved in the future<br>
+				(Check all that apply):</label>
+				<div id="checklist" style="text-align: left; padding: 4px 0px 0px 0px;">
+					<p><label for="Front-end Projects"><input id="Front-end Projects" name="checkboxes" type="checkbox" value=
+					"Front-end Projects">Front-end Projects</label></p>
+					<p><label for="Back-end Projects"><input id="Back-end Projects" name="checkboxes" type="checkbox"
+					value="Back-end Projects">Back-end Projects</label></p>
+					<p><label for="Data Visualization"><input id="Data Visualization" name="checkboxes" type="checkbox" value=
+					"Data Visualization">Data Visualization</label></p>
+					<p><label for="Open Source Community"><input id="Open Source Community" name="checkboxes" type="checkbox" value=
+					"Open Source Community">Open Source Community</label></p>
+					<p><label for="Monster Info"><input id="Monster Info" type="checkbox" value=
+					"Monster Info">Monster Info</label></p>
+					<p><label for="Area Info"><input id="Area Info" name="checkboxes" type="checkbox" value=
+					"Area Info">Area Info</label></p>
+					<p><label for="Communication"><input id="Communication" name="checkboxes" type="checkbox"
+					value="Communication">Communication</label></p>
+					<p><label for="Skills"><input id="Skills" name="checkboxes" type="checkbox" value=
+					"Skills">Skills</label></p>
+					<p><label for="Roles"><input id="Roles" name="checkboxes" type="checkbox" value=
+					"Roles">Roles</label></p>
+					<p><label for="Other"><input id="Other" name="checkboxes" type="checkbox" value=
+					"Other">Other</label></p>
+				</div>
+			</div>
+			<div id="textarea" style="margin-bottom: 32px">
+				<label for="textarea" id="textarea-label">If you choose Other, please specify:</label> 
+				<textarea cols="50" name="textarea" placeholder="Enter your comment here..." rows=
+				"4"></textarea>
+			</div>
+			<div id="textarea" style="margin-bottom: 32px">
+				<label for="textarea" id="textarea-label">Any Comments or Suggestions?</label> 
+				<textarea cols="50" name="textarea" placeholder="Enter your comment here..." rows=
+				"4"></textarea>
+			</div><button class="button" id="submit" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
